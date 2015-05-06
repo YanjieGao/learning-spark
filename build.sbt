@@ -12,7 +12,7 @@ javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
 
 // protocol buffer support
 seq(sbtprotobuf.ProtobufPlugin.protobufSettings: _*)
-  //"com.hadoop.gplcompression" % "hadoop-lzo" % "0.4.17",
+
 // additional libraries
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "1.3.0" % "provided",
@@ -29,9 +29,9 @@ libraryDependencies ++= Seq(
   "com.fasterxml.jackson.module" % "jackson-module-scala_2.10" % "2.3.3",
   "org.elasticsearch" % "elasticsearch-hadoop-mr" % "2.0.0.RC1",
   "net.sf.opencsv" % "opencsv" % "2.0",
-  "com.twitter.elephantbird" % "elephant-bird" % "4.5",
-  "com.twitter.elephantbird" % "elephant-bird-core" % "4.5",
-
+ // "com.twitter.elephantbird" % "elephant-bird" % "4.5",
+  //"com.twitter.elephantbird" % "elephant-bird-core" % "4.5",
+  //"com.hadoop.gplcompression" % "hadoop-lzo" % "0.4.17",
   "mysql" % "mysql-connector-java" % "5.1.31",
   "com.datastax.spark" %% "spark-cassandra-connector" % "1.0.0-rc5",
   "com.datastax.spark" %% "spark-cassandra-connector-java" % "1.0.0-rc5",
